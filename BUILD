@@ -15,6 +15,7 @@ java_binary(
     javacopts = [
         "-Xep:NullAway:ERROR",
         "-XepOpt:NullAway:AnnotatedPackages=com.example",
+        "--release", "11", "-source", "11", "-target", "11",
     ],
     plugins = [":nullaway_plugin"],
 )

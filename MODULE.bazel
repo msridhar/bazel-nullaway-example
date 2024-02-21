@@ -10,14 +10,10 @@ module(
     version = "1.0",
 )
 
-# bazel_dep(name = "com_google_errorprone_error_prone_core", version = "2.18.0")
-
 bazel_dep(name = "rules_jvm_external", version = "6.0")
 maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
 maven.install(
     artifacts = [
-        # This line is an example coordinate, you'd copy-paste your actual dependencies here
-        # from your build.gradle or pom.xml file.
         "com.uber.nullaway:nullaway:0.10.23",
     ],
 )
