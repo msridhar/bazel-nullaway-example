@@ -5,7 +5,7 @@ import java.util.function.*;
 public class Greeting {
     public static void sayHi() {
         System.out.println("Hi!");
-        //Object x = null; x.hashCode();
+        // Object x = null; x.hashCode();
     }
 
     public static void testMap(String p) {
